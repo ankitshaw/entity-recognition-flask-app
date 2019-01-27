@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Entity Recognition</title>
+</head>
+<body>
+
+	<div>
+		<canvas id="text" width="500" height="100"></canvas>
+		<canvas id="stage" width="500" height="100"></canvas>
+		<form id="form" method="POST">
+		    <input name="text" type="text" id="inputText" size="10" value="Input sentence" />
+		    <input type="submit" value="Extract" />
+		</form>
+	</div>
+
+    <div class="flashes">
+	  {% for message in get_flashed_messages() %}
+	    {{ message }}
+	  {% endfor %}
+	</div>
+	</form>
+
+</body>
+</html>
+
+
