@@ -2,8 +2,6 @@ from flask import Flask, request, render_template
 from flask import Markup, flash
 import spacy
 from spacy import displacy
-from collections import Counter
-from pathlib import Path
 import en_core_web_sm
 
 nlp = en_core_web_sm.load()
